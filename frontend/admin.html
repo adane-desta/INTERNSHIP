@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>owner Dashboard - EthioNet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin.css">
+    
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>EthioNest <br> <span style="font-size: small;">Admin Dashboard</span></h2>
+            <nav>
+                <a href="#" id="analytics-nav">Platform Analytics</a>
+                <a href="#" id="users-nav">Manage Users</a>
+                <a href="#" id="properties-nav">Manage Properties</a>
+                <a href="#" id="company-nav">Manage Companies</a>
+                <a href="#" id="feedbacks-nav">Feedbacks</a>
+                <a href="#" id="requests-nav">Requests</a>
+            </nav>
+        </div>
+        <!-- Content Area -->
+        <div class="content" id="contentArea">
+            <!-- Dynamic content will be loaded here -->
+        </div>
+    </div>
+
+    <!-- Modal for adding new content -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <!-- Modal content will be loaded here based on active section -->
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

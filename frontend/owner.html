@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Real Estate Owner Dashboard</title>
+  <link rel="stylesheet" href="owner.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>EthioNest</h2>
+      <nav>
+        <ul>
+          <li><a href="#" data-page="dashboard">Dashboard</a></li>
+          <li><a href="#" data-page="add-property">Add New Property</a></li>
+          <li><a href="#" data-page="manage-properties">Manage Properties</a></li>
+          <li><a href="#" data-page="inquiries">Inquiries</a></li>
+          <li><a href="#" data-page="profile-settings">Profile Settings</a></li>
+          <li><a href="#" data-page="subscription">Subscription & Billing</a></li>
+          <li><a href="#" data-page="logout">Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main">
+      
+      <!-- Top Navbar -->
+      <header class="navbar">
+        <input type="text" placeholder="Search properties..." class="search-bar">
+        <div class="nav-icons">
+          <span class="icon">🔔</span>
+          <span class="profile-pic">👤</span>
+        </div>
+      </header>
+
+      <!-- Content Area (Dynamic) -->
+      <section id="content-area" class="dashboard">
+        <!-- Initial content loaded by JS -->
+      </section>
+
+    </div>
+  </div>
+
+  <script src="owner.js"></script>
+</body>
+</html>
