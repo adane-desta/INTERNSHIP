@@ -1,0 +1,44 @@
+.page-title {
+    font-size: 28px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+  }
+  
+  .companies-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .companies-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+  }
+  
+  .companies-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .companies-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .companies-info {
+    padding: 20px;
+  }
+  
+  .companies-info h3 {
+    margin-bottom: 10px;
+  }
+  
+  .companies-info p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
