@@ -16,7 +16,7 @@ build/
 # IDE specific
 .vscode/
 .idea/
-*.suo
+*.suo  https://github.com/adane-desta/INTERNSHIP
 *.ntvs*
 *.njsproj
 *.sln
