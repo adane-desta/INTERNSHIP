@@ -1,0 +1,167 @@
+.seller-info-section {
+    margin-top: 20px;
+  }
+  
+  .property-description p {
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+  
+  /* src/styles/PropertyDetail.css */
+
+.property-image-container {
+    position: relative;
+    /* Add any other styling for the container specific to property detail */
+  }
+  
+  .property-image-container img {
+    max-width: 100%;
+    /* Add more specific image styling if needed */
+  }
+  
+  
+  .image-navigation {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    z-index: 10;
+  }
+  
+  .image-navigation button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    /* Add more styling for button appearance */
+  }
+  
+  .image-navigation button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+
+
+.property-image-container {
+    position: relative;
+    /* Add any other styling for the container specific to property detail */
+    overflow: hidden; /* Good practice to prevent image overflow */
+    /* Add a background color to see the container area */
+    background-color: #f0f0f0; /* Light gray background for visualization */
+    display: flex; /* Use flexbox to help center image if needed */
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; /* Give it a minimum height so it's visible */
+}
+
+.property-image-container img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below the image */
+    /* Add more specific image styling if needed */
+}
+
+.image-navigation {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    z-index: 10;
+    pointer-events: none; /* Prevent navigation clicks from interfering with image */
+}
+
+/* Style the buttons specifically within the navigation container */
+.image-navigation button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px 15px; /* Slightly larger padding */
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--dark);
+    transition: background-color 0.2s ease;
+    pointer-events: auto; /* Re-enable clicks for the buttons themselves */
+}
+
+.image-navigation button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.image-navigation button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none; /* Explicitly disable pointer events when disabled */
+}
+
+/* Position the status badge */
+.property-badge {
+    position: absolute; /* Use absolute positioning */
+    top: 10px; /* Adjust position as needed */
+    right: 10px; /* Adjust position as needed */
+    background-color: var(--success); /* Example color */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    z-index: 5; /* Ensure it's above the image */
+}
+
+/* Add some basic styling for the details section */
+.property-details {
+    padding: 20px;
+    border-top: 1px solid var(--light-gray);
+}
+
+.property-price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.property-address {
+    font-size: 1.1rem;
+    color: var(--gray);
+    margin-bottom: 15px;
+}
+
+.property-condition {
+    font-size: 1rem;
+    color: var(--dark);
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.seller-info-section,
+.delivery-info-section {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid var(--light-gray);
+}
+
+.seller-info-section h3,
+.delivery-info-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--secondary);
+}
+
+.seller-info-section p,
+.delivery-info-section p {
+    margin-bottom: 8px;
+}
+
+.property-footer {
+    margin-top: 30px;
+    text-align: center;
+}
